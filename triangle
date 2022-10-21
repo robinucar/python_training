@@ -1,0 +1,19 @@
+# Write a python function to check whether three given numbers can form the sides of a triangle. 
+def form_triangle(num1,num2,num3):
+  success = "Triangle can be formed"
+  failure = "Triangle cannot be formed"
+  if(num1 >= num2 + num3):
+    return failure
+  elif(num2 >= num1 + num3):
+      return failure
+  elif(num3 >= num1+num2):
+      return failure
+  else:
+     return success
+
+
+num1 = 2
+num2 = 3
+num3 = 4
+
+print(form_triangle(num1,num2,num3))
